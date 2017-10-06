@@ -45,7 +45,7 @@ public class StringDemo
         System.out.println(one);
         System.out.println(two);
         
-        int three = one + + two;
+        int three = one + two;
         System.out.println(three);
         
         String four = one + "" + two;
@@ -57,9 +57,29 @@ public class StringDemo
         String s = "asdf" + 'd';
         System.out.println(s);
         
+        String str1 = "abc";
+        String str2 = "abc";
+        String str3 = "def";
+        String str4 = "abcdef";
+        String str5 = str1 + str3;
+        
+        System.out.println(str1 == str2);
+        System.out.println(str2 == str3);
+        System.out.println(str4 == str5);
+        
+        System.out.println(str1.equals(str2));
+        System.out.println(str2.equals(str3));
+        System.out.println(str4.equals(str5));
+        
+        
         String last = "Cooper";
         String first = "Jon";
+        String full_first = "Jonathan";
         
         System.out.println(first.compareTo(last));
+        System.out.println(last.compareTo(first));
+        System.out.println(last.compareTo(last));
+        System.out.println(full_first.compareTo(first));
+        
     }
 }
